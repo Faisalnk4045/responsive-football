@@ -19,6 +19,8 @@ main{
 /* header section styles */
 header{
     background-color: #2D25A0;
+    box-sizing: border-box;
+    width: 100%;
     padding-left: 156px;
     padding-right: 140px;
     padding-top: 153px;
@@ -33,14 +35,16 @@ header{
     font-size: 64px;
     line-height: 80px;
     color: #fff;
-    margin-bottom: 10px;
+    margin-bottom: 27px;
 }
 .top-banner button{
     background-color: #E02C6D;
     color: white;
     border: none;
-    padding: 10px 25px;
+    padding: 10px 24px;
     font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    line-height: 24px;
     transition: all .2s ease-in-out;
 }
 .top-banner button:hover{
@@ -49,7 +53,7 @@ header{
     color: white;
 }
 .top-banner img{
-    margin-left: 150px;
+    margin-left: 100px;
     /* border: 1px solid white; */
     width: 556.01px;
     height: 438px;
@@ -82,12 +86,14 @@ header{
     font-size: 28px;
     font-weight: 700;
     line-height: 40px;
+    margin-bottom: 10px;
 }
 .player .player-info{
     font-weight: 400;
     font-size: 16px;
     line-height: 26px;
     color: #6C6C6C;
+    padding: .8px 0;
 }
 
 /* footer section styles */
@@ -114,42 +120,48 @@ footer{
     line-height: 24px;
 }
 
-/* Media Queries */
 
-@media screen and (min-width: 688px) and (max-width: 720px){
+@media (max-width:688px){
+
+    /* header section styles */
     header{
+        box-sizing: border-box;
+        background-color: #2D25A0;
         padding-left: 15px;
         padding-right: 0px;
-        padding-top: 100px;
-        padding-bottom: 10px;
-        margin-bottom: 47px;
+        padding-top: 0px;
+        padding-bottom: 0px;
+        margin-bottom: 70px;
     }
     .top-banner{
         flex-direction: column;
         align-items: flex-start;
+        padding-top: 112px;
     }
-    #info{
+    #banner-info{
         margin-bottom: 50px;
     }
     .top-banner h1{
-        font-size: 42px;
+        font-size: 36px;
         line-height: 50px;
-        margin-bottom: 30px;
     }
     .top-banner img{
-        margin-left: 0px;
+        margin-left: 0;
         width: 329px;
-        height: 260px;
+        height: 259px;
+        margin-bottom: 60px;
     }
-    
+
     /* top players styles */
     .top-players{
-    grid-template-columns: repeat(1,1fr);
-    grid-row-gap: 27px;
-    /* justify-content: center; */
-}
+        grid-template-columns: repeat(1,1fr);
+        grid-row-gap: 24px;
+        justify-content: center;
+    }
 
-    footer{
-        display: none;
+    /* footer styles */
+    footer .logo img{
+        width: 271px;
+        height: 63px;
     }
 }
