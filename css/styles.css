@@ -30,6 +30,7 @@ header{
 .top-banner{
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 .top-banner h1{
     font-size: 64px;
