@@ -161,6 +161,9 @@ footer{
     }
 
     /* footer styles */
+    footer{
+        margin-bottom: 187px;
+    }
     footer .logo img{
         width: 271px;
         height: 63px;
