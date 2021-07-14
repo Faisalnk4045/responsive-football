@@ -142,7 +142,7 @@ header{
 }
 
 /* match section styles */
-/* .match-time-table{
+.match-time-table{
     margin-bottom: 100px;
 }
 .match-section-title{
@@ -163,9 +163,18 @@ header{
     width: 1050px;
 }
 #final-match img{
-    width: 700px;
-    height: 442px;
+    width: 660px;
+    height: 445px;
 }
+#final-status{
+    padding: 60px;
+}
+#final-status .match-name{
+    font-size: 36px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
 .match{
     box-sizing: border-box;
     width: 330px;
@@ -199,7 +208,11 @@ header{
 }
 .match-time{
     color: #6C6C6C;
-} */
+}
+.match-leaderboard{
+    padding-top: 10px;
+    font-size: 18px;
+}
 
 /* footer section styles */
 footer{
@@ -266,6 +279,15 @@ footer{
     /* top news section styles */
     .top-news{
         grid-template-columns: repeat(1, 1fr);
+    }
+    /* matches section styles */
+    #final-match{
+        display: none;
+    }
+    .matches{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-row-gap: 27px;
     }
     /* footer styles */
     footer{
