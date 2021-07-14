@@ -1,8 +1,12 @@
-
-/* fonts */
+/*-------------------------
+    fonts 
+ --------------------------*/
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
 
-/* common styles */
+
+/*-------------------------
+    common styles 
+ --------------------------*/
 *{
     margin: 0;
     padding: 0;
@@ -16,11 +20,14 @@ main{
     align-items: center;
 }
 
-/* header section styles */
+
+/*-------------------------
+    header section styles 
+ --------------------------*/
 header{
+    width: 100%;
     background-color: #2D25A0;
     box-sizing: border-box;
-    width: 100%;
     padding-left: 156px;
     padding-right: 140px;
     padding-top: 153px;
@@ -55,14 +62,15 @@ header{
 }
 .top-banner img{
     margin-left: 100px;
-    /* border: 1px solid white; */
     width: 556.01px;
     height: 438px;
 }
 
-/* top players styles */
+
+/*-------------------------
+    top players styles 
+ --------------------------*/
 .top-players{
-    /* width: 90%; */
     display: grid;
     grid-template-columns: repeat(3,1fr);
     grid-column-gap: 30px;
@@ -74,7 +82,6 @@ header{
     box-sizing: border-box;
     width: 330px;
     height: 474px;
-    /* width: 60%; */
     padding: 15px;
     background-color: white;
     box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
@@ -98,7 +105,10 @@ header{
     padding: .8px 0;
 }
 
-/* top news section styles */
+
+/*-------------------------
+    news section styles 
+ --------------------------*/
 .top-news-section{
     margin-bottom: 100px;
 }
@@ -141,7 +151,10 @@ header{
     color: #6C6C6C;
 }
 
-/* match section styles */
+
+/*-------------------------
+    match section styles 
+ --------------------------*/
 .match-time-table{
     margin-bottom: 100px;
 }
@@ -157,6 +170,7 @@ header{
     grid-column-gap: 30px;
     grid-row-gap: 27px;
 }
+
 #final-match{
     display: flex;
     grid-area: 1 / 1 / 2 / 4;
@@ -214,7 +228,10 @@ header{
     font-size: 18px;
 }
 
-/* footer section styles */
+
+/*-------------------------
+    footer section styles 
+ --------------------------*/
 footer{
     text-align: center;
     margin-bottom: 63px;
@@ -238,7 +255,9 @@ footer{
     line-height: 24px;
 }
 
-
+/*-----------------------------
+    Media Queries for mobile 
+ ------------------------------*/
 @media (max-width:688px){
 
     /* header section styles */
@@ -256,9 +275,6 @@ footer{
         align-items: flex-start;
         padding-top: 112px;
     }
-    #banner-info{
-        margin-bottom: 50px;
-    }
     .top-banner h1{
         font-size: 36px;
         line-height: 50px;
@@ -269,6 +285,9 @@ footer{
         height: 259px;
         margin-bottom: 60px;
     }
+    #banner-info{
+        margin-bottom: 50px;
+    }
 
     /* top players styles */
     .top-players{
@@ -276,10 +295,12 @@ footer{
         grid-row-gap: 24px;
         justify-content: center;
     }
+
     /* top news section styles */
     .top-news{
         grid-template-columns: repeat(1, 1fr);
     }
+
     /* matches section styles */
     #final-match{
         display: none;
@@ -289,7 +310,8 @@ footer{
         grid-template-columns: repeat(1, 1fr);
         grid-row-gap: 27px;
     }
-    /* footer styles */
+
+    /* footer section styles */
     footer{
         margin-bottom: 187px;
     }
@@ -297,7 +319,4 @@ footer{
         width: 271px;
         height: 63px;
     }
-    /* .match-time-table{
-        display: none;
-    } */
 }
